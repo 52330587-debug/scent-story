@@ -1,0 +1,753 @@
+/* ========== NAVBAR ========== */
+
+.navbar {
+  background: #681D35;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 18px 5%;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: white;
+  white-space: nowrap;
+}
+
+.logo span {
+  color: #C5A46D;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #C5A46D;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 28px;
+}
+
+/* ========== HOME ========== */
+
+.hero {
+  text-align: center;
+  padding: 110px 20px;
+  background: linear-gradient(135deg,
+      #FFF8F3,
+      #F4DDE3);
+}
+
+.small-title {
+  font-size: 13px;
+  letter-spacing: 4px;
+  color: #A77848;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-family: Georgia, serif;
+  font-size: 52px;
+  color: #681D35;
+  margin-bottom: 20px;
+}
+
+.hero-description {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  line-height: 1.8;
+  font-size: 17px;
+}
+
+.main-btn {
+  display: inline-block;
+  background: #681D35;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 30px;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.main-btn:hover {
+  background: #872844;
+}
+
+/* ========== CATEGORIES ========== */
+
+.categories {
+  padding: 70px 6%;
+  text-align: center;
+}
+
+.categories h2 {
+  font-family: Georgia, serif;
+  font-size: 35px;
+  color: #681D35;
+  margin-bottom: 15px;
+}
+
+.categories>p {
+  margin-bottom: 40px;
+}
+
+.category-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  max-width: 1150px;
+  margin: auto;
+}
+
+.category-card {
+  background: white;
+  border-radius: 16px;
+  padding: 45px 25px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+  transition: 0.3s;
+}
+
+.category-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(104, 29, 53, 0.15);
+}
+
+.category-icon {
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+
+.category-card h3 {
+  color: #681D35;
+  margin-bottom: 15px;
+}
+
+.category-card p {
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.category-card span {
+  color: #A77848;
+  font-weight: bold;
+}
+
+/* ========== PAGE LAYOUT ========== */
+
+.collection-page,
+.suggest-page,
+.simple-page {
+  text-align: center;
+  padding: 65px 6%;
+  min-height: 75vh;
+}
+
+.collection-page h1,
+.suggest-page h1,
+.simple-page h1 {
+  font-family: Georgia, serif;
+  font-size: 40px;
+  color: #681D35;
+  margin-bottom: 20px;
+}
+
+.collection-page>p,
+.suggest-page>p,
+.simple-page>p {
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.search-input {
+  display: block;
+  width: min(100%, 450px);
+  padding: 15px;
+  margin: 30px auto;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  outline-color: #681D35;
+}
+
+/* ========== PERFUME CARDS ========== */
+
+.perfume-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  max-width: 1150px;
+  margin: 35px auto;
+}
+
+.perfume-card {
+  background: white;
+  border-radius: 16px;
+  padding: 22px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+  transition: 0.3s;
+}
+
+.perfume-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(104, 29, 53, 0.12);
+}
+
+.perfume-photo-box {
+  height: 260px;
+  background: #FFF8F3;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.perfume-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 15px;
+}
+
+.photo-placeholder {
+  font-size: 65px;
+}
+
+.perfume-card h3 {
+  color: #681D35;
+  margin-bottom: 10px;
+  font-size: 21px;
+}
+
+.perfume-notes {
+  font-size: 14px;
+  color: #777;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.perfume-card h4 {
+  font-size: 20px;
+  color: #681D35;
+  margin-bottom: 15px;
+}
+
+.available {
+  color: #287847;
+  font-weight: bold;
+}
+
+.sold-out {
+  color: #B22B45;
+  font-weight: bold;
+}
+
+/* ========== SUGGEST PERFUME ========== */
+
+.suggest-page h3 {
+  margin-top: 35px;
+  margin-bottom: 20px;
+  color: #681D35;
+}
+
+.suggest-page select {
+  padding: 12px 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background: white;
+}
+
+.notes-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  max-width: 700px;
+  margin: 30px auto;
+}
+
+.note-btn {
+  padding: 12px 24px;
+  background: white;
+  color: #681D35;
+  border: 1px solid #681D35;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.note-btn:hover {
+  background: #F4DDE3;
+}
+
+.note-btn.selected {
+  background: #681D35;
+  color: white;
+}
+
+.suggest-btn {
+  margin-top: 20px;
+}
+
+.suggest-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.results {
+  margin-top: 60px;
+}
+
+.results h2 {
+  color: #681D35;
+}
+
+.match-text {
+  color: #681D35;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+/* ========== FEATURES ========== */
+
+.feature-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  max-width: 1100px;
+  margin: 40px auto;
+}
+
+.feature-card {
+  padding: 30px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.feature-card h2 {
+  color: #681D35;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.feature-card p {
+  line-height: 1.7;
+}
+
+/* ========== ABOUT AND CONTACT ========== */
+
+.simple-page>p {
+  max-width: 650px;
+  margin: 20px auto;
+}
+
+.simple-page>h2 {
+  color: #681D35;
+  margin-top: 35px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 30px auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.contact-form textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+.form-success {
+  color: #681D35;
+  font-weight: bold;
+}
+
+/* ========== MOBILE DESIGN ========== */
+
+@media (max-width: 900px) {
+
+  .nav-container {
+    flex-wrap: wrap;
+  }
+
+  .menu-toggle {
+    display: block;
+    margin-left: auto;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    gap: 0;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: 13px 8px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  .category-container,
+  .perfume-container,
+  .feature-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .hero {
+    padding: 75px 20px;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .categories h2 {
+    font-size: 29px;
+  }
+
+  .category-container,
+  .perfume-container,
+  .feature-container {
+    grid-template-columns: 1fr;
+  }
+
+  .collection-page h1,
+  .suggest-page h1,
+  .simple-page h1 {
+    font-size: 30px;
+  }
+
+  .perfume-photo-box {
+    height: 280px;
+  }
+
+}
+
+.hero {
+  min-height: 85vh;
+  background-image: url("/photos/background.jpg.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  padding: 80px 8%;
+  box-sizing: border-box;
+}
+
+.hero h1 {
+  color: #54283c;
+  font-family: Georgia, serif;
+  font-size: clamp(40px, 5vw, 72px);
+  max-width: 550px;
+}
+
+.hero-description {
+  color: #54283c;
+  max-width: 450px;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* ========================= */
+/* SIDEBAR NAVIGATION */
+/* ========================= */
+
+/* Three Dashes Button */
+
+.hamburger-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+
+  background-color: #681D35;
+  color: white;
+
+  border: none;
+  border-radius: 10px;
+
+  width: 48px;
+  height: 48px;
+
+  font-size: 27px;
+  cursor: pointer;
+
+  z-index: 1201;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
+}
+
+.hamburger-btn:hover {
+  background-color: #872844;
+}
+
+/* Sidebar */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 290px;
+  max-width: 85vw;
+  height: 100vh;
+  height: 100dvh;
+
+  background-color: #681D35;
+  color: white;
+
+  padding: 90px 25px 30px;
+
+  display: flex;
+  flex-direction: column;
+
+  z-index: 1200;
+
+  transform: translateX(-100%);
+  visibility: hidden;
+  transition: transform 0.3s ease,
+    visibility 0.3s ease;
+
+  overflow-y: auto;
+}
+
+/* Open Sidebar */
+
+.sidebar-open {
+  transform: translateX(0);
+  visibility: visible;
+}
+
+/* Logo */
+
+.sidebar-logo {
+  font-size: 25px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.sidebar-logo span {
+  color: #C5A46D;
+}
+
+.sidebar-subtitle {
+  color: #E8C9D1;
+  font-size: 13px;
+  margin-bottom: 35px;
+}
+
+/* Navigation Links */
+
+.sidebar-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sidebar-links a {
+  display: block;
+
+  padding: 14px 16px;
+  border-radius: 10px;
+
+  color: white;
+  font-size: 15px;
+
+  transition: 0.3s;
+}
+
+/* Hover Effect */
+
+.sidebar-links a:hover {
+  background-color: #8A3650;
+  padding-left: 24px;
+}
+
+/* Active Page */
+
+.sidebar-links a.active {
+  background-color: #F4DDE3;
+  color: #681D35;
+  font-weight: bold;
+}
+
+/* Sidebar Footer */
+
+.sidebar-footer {
+  margin-top: auto;
+  padding-top: 35px;
+  text-align: center;
+  color: #E8C9D1;
+  font-size: 12px;
+}
+
+/* Dark Overlay */
+
+.sidebar-overlay {
+  position: fixed;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 0;
+
+  z-index: 1100;
+  cursor: pointer;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+  .hamburger-btn {
+    top: 15px;
+    left: 15px;
+
+    width: 44px;
+    height: 44px;
+  }
+
+  .sidebar {
+    width: 270px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+}
+
+/* ========== PERFUME FILTERS ========== */
+
+.filter-section {
+  background: #F4DDE3;
+  padding: 30px;
+  border-radius: 18px;
+  max-width: 1100px;
+  margin: 35px auto;
+}
+
+.filter-section h2 {
+  font-family: Georgia, serif;
+  color: #681D35;
+  margin-bottom: 25px;
+}
+
+.filter-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 10px;
+}
+
+.filter-group label {
+  color: #681D35;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.filter-group input,
+.filter-group select {
+  width: 100%;
+  min-width: 0;
+  padding: 13px;
+  background: white;
+  border: 1px solid #E0C7CE;
+  border-radius: 10px;
+  outline-color: #681D35;
+}
+
+.clear-btn {
+  background: #681D35;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+.clear-btn:hover {
+  background: #872844;
+}
+
+.results-count {
+  color: #681D35;
+  font-weight: bold;
+  margin-top: 25px;
+}
+
+/* RESPONSIVE FILTERS */
+
+@media (max-width: 900px) {
+  .filter-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .filter-container {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-section {
+    padding: 20px;
+  }
+}
