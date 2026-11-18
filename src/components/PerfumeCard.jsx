@@ -15,7 +15,7 @@ function PerfumeCard({ perfume }) {
                         onError={() => setImageError(true)}
                     />
                 ) : (
-                    <span className="photo-placeholder">🧴</span>
+                    <span className="photo-placeholder"></span>
                 )}
             </div>
 

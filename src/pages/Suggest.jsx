@@ -57,7 +57,7 @@ function Suggest() {
     return (
         <main className="suggest-page">
 
-            <h1>Find Your Signature Scent ✨</h1>
+            <h1>Find Your Signature Scent </h1>
 
             <p>
                 Tell us your favorite fragrance notes,
